@@ -82,10 +82,8 @@ abstract class AbstractChatMemberSearchStrategy extends Form implements ChatMemb
 		return ChatMemberSearchView::find()
 		                           ->select([
 			                           ChatMember::field('*'),
-			                           //'last_call_rel_id'          => 'last_call_rel.id',
-			                           //'is_linked'                 => '(cmle.id is not null)',
-			                           'last_call_rel_id'          => 'MAX(last_call_rel.id)',
-			                           'is_linked'                 => 'MAX(cmle.id is not null)',
+			                           'last_call_rel_id'          => 'last_call_rel.id',
+			                           'is_linked'                 => '(cmle.id is not null)',
 			                           'unread_task_count'         => 'COUNT(DISTINCT t.id)',
 			                           'unread_notification_count' => 'COUNT(DISTINCT un.id)',
 			                           'unread_message_count'      => 'COUNT(DISTINCT m.id)',

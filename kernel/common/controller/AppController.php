@@ -35,8 +35,6 @@ class AppController extends Controller
 	public function __construct($id, $module, $config = [])
 	{
 		$this->user = Yii::$app->user;
-		//Yii::$app->db->createCommand("SET sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE'")->execute();
-		//Yii::$app->db_old->createCommand("SET sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_DATE,NO_ZERO_IN_DATE'")->execute();
 
 		parent::__construct($id, $module, $config);
 	}
