@@ -1,0 +1,18 @@
+
+DROP TABLE IF EXISTS `offer`, `building_object`, `land_plot`, `building`, `land_plot_object`, `location`, `communications`, `security`, `lifting_mechanisms`, `parking`, `entrance`, `equipment_furniture`, `railway`, `region`, `district`, `locality`, `highway`, `metro`, `railway_station`, `complex`, `vri`;
+
+# ALTER TABLE building DROP COLUMN building_department, building_department_id, building_temperature_conditions, building_temperature_conditions, building_wall_material, building_type_overlap, building_video_link, building_all_moved_data;
+# ALTER TABLE land_plot DROP COLUMN land_plot_department, land_plot_department_id;
+# ALTER TABLE building_object DROP COLUMN b_obj_department, b_obj_department_id, b_obj_stained_glass_windows, b_obj_all_moved_data;
+# ALTER TABLE communications DROP COLUMN communications_one_time_load, communications_electr_reliability_cat, communications_reserve_power_supply, communications_reserve_power_supply_type, communications_water_supply_type;
+# ALTER TABLE offer DROP COLUMN offer_department, offer_department_id, offer_indexation_type, offer_indexation, offer_free_shuttle_service, offer_contract_term_type, offer_contract_term, offer_exit_from_сontract_type, offer_exit_from_сontract, offer_real_estate_sales, offer_sale_lease_rights, offer_combined, offer_long_term_contracts, offer_credit, offer_courts, offer_servitudes, offer_type_of_right, offer_term, offer_management_company_name, offer_management_company_price, offer_one_time_load, offer_storage_type, offer_room_integration, offer_street_retail, offer_calc_area_by, offer_input_groups_cnt, offer_wet_points_cnt, offer_storage_on_racks, offer_all_moved_data;
+
+ALTER TABLE `contact` DROP COLUMN `relationships`, DROP COLUMN `availability`, DROP COLUMN `all_moved_data`, DROP COLUMN `contact_department`, DROP COLUMN `contact_department_id`, DROP COLUMN `contact_availability`, DROP COLUMN `temp_name`;
+ALTER TABLE `company` DROP COLUMN `company_availability`, DROP COLUMN `all_moved_data`, DROP COLUMN `company_department`, DROP COLUMN `company_department_id`;
+ALTER TABLE `request` DROP COLUMN `all_moved_data`, DROP COLUMN `request_department`, DROP COLUMN `request_department_id`;
+ALTER TABLE `user` DROP COLUMN `user_department`, DROP COLUMN `user_department_id`;
+ALTER TABLE `user_profile` DROP COLUMN `temp_name`;
+
+DELETE FROM `migration` WHERE `apply_time` > 1765269225;
+
+#/etc/mysql/mariadb.conf.d/50-server.cnf

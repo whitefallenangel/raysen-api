@@ -1,0 +1,489 @@
+<?php
+
+use app\components\router\interfaces\RouteInterface;
+use app\components\router\interfaces\RouterInterface;
+use app\components\router\Method;
+
+return static function (RouterInterface $router) {
+	$router->controller('companygroup');
+	$router->controller('calendar');
+	$router->controller('favorite-offer');
+	$router->controller('company-events-log')->disablePluralize();
+
+	$router->controller('ChatMember/chat-member-message-tag')->alias('chat-member-message-tags')->crud();
+	$router->controller('call')->crud();
+	$router->controller('field')->crud();
+	$router->controller('effect')->crud();
+	$router->controller('survey-question-answer')->crud();
+	$router->controller('site');
+
+	$router->controller('user')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('online');
+
+		$route->post()->action('create');
+		$route->post('login');
+		$route->post('logout');
+		$route->post('activity');
+		$route->post('change-password');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->get('sessions');
+
+			$route->post('archive');
+			$route->post('restore');
+
+			$route->put()->action('update');
+
+			$route->delete()->action('delete-sessions');
+			$route->delete('sessions', 'delete-sessions');
+		});
+	});
+
+	$router->controller('session')->crud(['index', 'delete']);
+
+	$router->controller('company')->alias('companies')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('product-range-list');
+		$route->get('in-the-bank-list');
+
+		$route->post()->action('create');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->get('status-history', 'view-status-history');
+
+			$route->put()->action('update');
+
+			$route->post('enable');
+			$route->post('delete');
+			$route->post('passive');
+
+			$route->post('link-message');
+			$route->post('create-note');
+			$route->post('change-consultant');
+
+			$route->post('logo', 'update-logo');
+			$route->delete('logo', 'delete-logo');
+
+			$route->delete()->action('delete');
+		});
+	});
+
+	$router->controller('entity-message-link')->group(static function (RouteInterface $route) {
+		$route->get();
+		$route->delete('<id>', 'delete');
+	});
+
+	$router->controller('request')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('company-requests/<id>', 'company-requests');
+
+		$route->post()->action('create');
+
+		$route->patch('disable/<id>', 'disable');
+		$route->patch('undisable/<id>', 'undisable');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->post('clone');
+			$route->post('change-consultant');
+			$route->put()->action('update');
+		});
+	});
+
+	$router->controller('contact')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('company-contacts/<id>', 'company-contacts');
+
+		$route->post()->action('create');
+		$route->post('create-comment');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->get('phones', 'view-phones');
+
+			$route->put()->action('update');
+
+			$route->post('disable');
+			$route->post('enable');
+
+			$route->post('transfer-to-company');
+
+			$route->post('phones', 'create-phone');
+		});
+	});
+
+	$router->controller('phone')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+
+			$route->put()->action('update');
+
+			$route->post('disable');
+			$route->post('enable');
+			$route->post('mark-as-main');
+
+			$route->delete()->action('delete');
+		});
+	});
+
+	$router->controller('contact-comment')->crud(['update', 'delete']);
+	$router->controller('contact-position')->crud(['index', 'create', 'update', 'delete']);
+
+	$router->controller('timeline')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('search');
+		$route->get('<id>', 'view');
+		$route->get('action-comments/<id>', 'action-comments');
+
+		$route->post()->action('create');
+		$route->post('action-comment', 'add-action-comment');
+
+		$route->patch('update-step/<id>', 'update-step');
+	});
+
+	$router->controller('notification')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get('viewed-not-count');
+			$route->get('viewed-all');
+			$route->get('count');
+		});
+	});
+
+	$router->controller('calllist')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+
+		$route->prefix('<caller_id>', static function (RouteInterface $route) {
+			$route->get('viewed-not-count');
+			$route->get('viewed-all');
+			$route->get('count');
+		});
+	});
+
+	$router->controller('oldDb/object')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('offers');
+		$route->get('offers-map');
+		$route->get('offers-count');
+		$route->get('offers-map-count');
+
+		$route->post('toggle-avito-ad/<originalId>', 'toggle-avito-ad');
+		$route->post('toggle-is-fake/<originalId>', 'toggle-is-fake');
+	});
+
+	$router->controller('oldDb/location')->group(static function (RouteInterface $route) {
+		$route->get('region-list');
+	});
+
+	$router->controller('pdf/presentation')->group(static function (RouteInterface $route) {
+		$route->addRule([Method::GET], 'html');
+	});
+
+	$router->controller('complex')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->get('<id>', 'view');
+	});
+
+	$router->controller('complex-new')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->get('<id>', 'view');
+	});
+
+	$router->controller('letter')->group(static function (RouteInterface $route) {
+		$route->post('send-custom-letter');
+		$route->post('send');
+	});
+
+	$router->controller('letter-contact-answer')->group(static function (RouteInterface $route) {
+		$route->post()->action('create');
+	});
+
+	$router->controller('archiver')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->get('download');
+	});
+
+	$router->controller('ChatMember/chat-member')->alias('chat-members')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('statistic');
+
+		$route->post('pin-message');
+		$route->post('unpin-message');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->get('pinned-message');
+			$route->get('media');
+
+			$route->post('called');
+		});
+	});
+
+	$router->controller('ChatMember/chat-member-message')->alias('chat-member-messages')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+
+		$route->get('search');
+
+		$route->post()->action('create');
+		$route->post('with-task', 'create-with-task');
+		$route->post('with-tasks', 'create-with-tasks');
+
+		$route->post('create-task/<id>', 'create-task');
+		$route->post('create-tasks/<id>', 'create-tasks');
+		$route->post('create-alert/<id>', 'create-alert');
+		$route->post('create-reminder/<id>', 'create-reminder');
+		$route->post('create-notification/<id>', 'create-notification');
+		$route->post('view-message/<id>', 'view-message');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->put()->action('update');
+			$route->delete()->action('delete');
+		});
+	});
+
+	$router->controller('media')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('<id>', 'view');
+		$route->delete('<id>', 'delete');
+	});
+
+	$router->controller('survey')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+
+		$route->post()->action('create');
+		$route->get('pending-by-chat-member/<id>', 'view-pending-by-chat-member-id');
+
+		$route->get('statistics');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->get('with-questions', 'view-with-questions');
+
+			$route->post('complete');
+			$route->post('cancel');
+			$route->post('delay');
+			$route->post('continue');
+
+			$route->post('change-comment');
+			$route->post('actions', 'create-action');
+
+			$route->put()->action('update');
+			$route->put('with-survey-question-answer', 'update-with-survey-question-answer');
+			$route->delete()->action('delete');
+		});
+	});
+
+	$router->controller('survey-action')->group(static function (RouteInterface $route) {
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->put()->action('update');
+		});
+	});
+
+	$router->controller('question')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('with-question-answer', 'index-with-question-answer');
+
+		$route->post('/', 'create');
+		$route->post('with-question-answer', 'create-with-question-answer');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->put()->action('update');
+			$route->delete()->action('delete');
+		});
+	});
+
+	$router->controller('equipment')->group(static function (RouteInterface $route) {
+		$route->crud();
+		$route->post('<id>/called')->action('called');
+	});
+
+	$router->controller('question-answer')->group(static function (RouteInterface $route) {
+		$route->get('with-questions');
+		$route->crud();
+	});
+
+	$router->controller('task')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('counts');
+		$route->get('relations-statistics');
+		$route->get('statistic');
+
+		$route->post()->action('create');
+		$route->post('for-users', 'create-for-users');
+		$route->post('change-status/<id>', 'change-status');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+			$route->put()->action('update');
+			$route->delete()->action('delete');
+
+			$route->get('history');
+
+			$route->post('read');
+			$route->post('assign');
+			$route->post('postpone');
+			$route->post('restore');
+			$route->post('change-dates');
+			$route->post('change-type');
+
+			$route->prefix('relations', static function (RouteInterface $route) {
+				$route->get()->action('relations');
+				$route->post()->action('create-relations');
+			});
+
+			$route->prefix('files', static function (RouteInterface $route) {
+				$route->get()->action('files');
+				$route->post()->action('create-files');
+				$route->delete()->action('delete-files');
+			});
+
+			$route->prefix('comments', static function (RouteInterface $route) {
+				$route->get()->action('comments');
+				$route->post()->action('create-comment');
+			});
+		});
+	});
+
+	$router->controller('task-relation-entity')->group(static function (RouteInterface $route) {
+		$route->delete('<id>', 'delete');
+		$route->put('<id>', 'update');
+	})->disablePluralize();
+
+	$router->controller('task-tag')->group(static function (RouteInterface $route) {
+		$route->get('all');
+		$route->crud();
+	});
+
+	$router->controller('task-comment')->crud(['index', 'view', 'update', 'delete']);
+
+	$router->controller('task-favorite')->group(static function (RouteInterface $route) {
+		$route->crud(['index', 'create', 'delete']);
+		$route->post('<id>/change-position', 'change-position');
+	});
+
+	$router->controller('utilities')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->post('fix-land-object-purposes');
+		$route->post('reassign-consultants-to-companies');
+		$route->post('transfer-companies-to-consultant/<id>', 'transfer-companies-to-consultant');
+	});
+
+	$router->controller('folder')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('entities');
+
+		$route->post()->action('create');
+		$route->post('reorder');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->put()->action('update');
+			$route->delete()->action('delete');
+
+			$route->post('entities')->action('add-entities');
+			$route->post('clear')->action('clear-entities');
+			$route->delete('entities')->action('remove-entities');
+		});
+	});
+
+	$router->controller('user-tour')->group(static function (RouteInterface $route) {
+		$route->get('history');
+		$route->get('status');
+
+		$route->post('viewed');
+
+		$route->post('<id>/reset', 'reset');
+	});
+
+
+	$router->controller('deal')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+
+		$route->post('for-request/<id>', 'create-for-request');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+
+			$route->put()->action('update');
+
+			$route->delete()->action('delete');
+		});
+	});
+
+	$router->controller('message-template')->group(static function (RouteInterface $route) {
+		$route->get('render/<template>', 'render');
+	});
+
+	$router->controller('letter-tracking')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->get('open/<letter_contact_id>', 'open');
+	});
+
+	$router->controller('user-notification')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+		$route->get('user/count')->action('count');
+		$route->post('user/acted-all')->action('acted-all');
+		$route->post('send');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+
+			$route->post('viewed');
+			$route->post('acted');
+			$route->post('actions/<actionId>/process', 'process-action');
+		});
+	});
+
+	$router->controller('user-notification-action-log')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+	});
+
+	$router->controller('user-notification-template')->group(static function (RouteInterface $route) {
+		$route->get()->action('index');
+
+		$route->post()->action('create');
+
+		$route->prefix('<id>', static function (RouteInterface $route) {
+			$route->get()->action('view');
+
+			$route->post('disable');
+			$route->post('enable');
+
+			$route->put()->action('update');
+
+			$route->delete()->action('delete');
+		});
+	});
+
+	$router->controller('integration/telegram')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->post('start');
+		$route->post('status');
+		$route->post('revoke');
+	});
+
+	$router->controller('integration/telegram-admin')->alias('integration/telegram/admin')->group(static function (RouteInterface $route) {
+		$route->get('list');
+		$route->get('tickets');
+
+		$route->post('revoke-user/<id>')->action('revoke-user');
+		$route->post('revoke-link/<id>')->action('revoke-link');
+	});
+
+	$router->controller('integration/telegram-webhook')->alias('integration/telegram/webhook')->group(static function (RouteInterface $route) {
+		$route->post()->action('handle');
+	});
+
+	$router->controller('integration/whatsapp')->disablePluralize()->group(static function (RouteInterface $route) {
+		$route->post('link');
+		$route->post('status');
+		$route->post('revoke');
+	});
+
+	$router->controller('integration/whatsapp-admin')->alias('integration/whatsapp/admin')->group(static function (RouteInterface $route) {
+		$route->get('list');
+
+		$route->post('revoke-user/<id>')->action('revoke-user');
+		$route->post('revoke-link/<id>')->action('revoke-link');
+	});
+};

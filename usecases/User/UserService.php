@@ -1,0 +1,236 @@
+<?php
+
+declare(strict_types=1);
+
+namespace app\usecases\User;
+
+use app\components\EventManager;
+use app\dto\User\ChangeUserPasswordDto;
+use app\dto\User\CreateUserDto;
+use app\dto\User\CreateUserProfileDto;
+use app\dto\User\UpdateUserDto;
+use app\dto\User\UserActivityDto;
+use app\events\User\UserArchivedEvent;
+use app\events\User\UserDeletedEvent;
+use app\exceptions\InvalidPasswordException;
+use app\exceptions\ValidationErrorHttpException;
+use app\helpers\DateTimeHelper;
+use app\kernel\common\database\interfaces\transaction\TransactionBeginnerInterface;
+use app\kernel\common\models\exceptions\ModelNotFoundException;
+use app\kernel\common\models\exceptions\SaveModelException;
+use app\models\UploadFile;
+use app\models\User\User;
+use app\repositories\UserRepository;
+use Throwable;
+use yii\base\Exception;
+use yii\base\Security;
+use yii\db\StaleObjectException;
+
+class UserService
+{
+	private TransactionBeginnerInterface $transactionBeginner;
+	private UserProfileService           $userProfileService;
+	private UserAccessTokenService       $accessTokenService;
+	private UserActivityService          $userActivityService;
+	private Security                     $security;
+	private UserRepository               $repository;
+	private EventManager                 $eventManager;
+
+	public function __construct(
+		TransactionBeginnerInterface $transactionBeginner,
+		UserProfileService $userProfileService,
+		UserAccessTokenService $accessTokenService,
+		UserActivityService $userActivityService,
+		Security $security,
+		UserRepository $repository,
+		EventManager $eventManager
+	)
+	{
+		$this->security            = $security;
+		$this->transactionBeginner = $transactionBeginner;
+		$this->userProfileService  = $userProfileService;
+		$this->accessTokenService  = $accessTokenService;
+		$this->userActivityService = $userActivityService;
+		$this->repository          = $repository;
+		$this->eventManager        = $eventManager;
+	}
+
+	/**
+	 * @throws ModelNotFoundException
+	 */
+	public function getByUsername(string $username): User
+	{
+		return $this->repository->getByUsernameOrThrow($username);
+	}
+
+	/**
+	 * @throws Exception
+	 * @throws SaveModelException
+	 * @throws Throwable
+	 * @throws ValidationErrorHttpException
+	 */
+	public function create(CreateUserDto $createUserDto, CreateUserProfileDto $userProfileDto, UploadFile $uploadMedia)
+	{
+		$tx = $this->transactionBeginner->begin();
+
+		try {
+			$model = new User([
+				'username'          => $createUserDto->username,
+				'email'             => $createUserDto->email,
+				'email_username'    => $createUserDto->email_username,
+				'email_password'    => $createUserDto->email_password,
+				'role'              => $createUserDto->role,
+				'password_hash'     => $this->security->generatePasswordHash($createUserDto->password),
+				'restrict_ip_login' => $createUserDto->restrict_ip_login
+			]);
+
+			$model->saveOrThrow();
+
+			$this->userProfileService->create($model->id, $userProfileDto, $uploadMedia);
+
+			$tx->commit();
+
+			return $model;
+		} catch (Throwable $th) {
+			$tx->rollBack();
+			throw $th;
+		}
+	}
+
+	/**
+	 * @throws Exception
+	 * @throws SaveModelException
+	 * @throws Throwable
+	 * @throws ValidationErrorHttpException
+	 */
+	public function update(User $model, UpdateUserDto $dto, CreateUserProfileDto $userProfileDto, UploadFile $uploadMedia): User
+	{
+		$tx = $this->transactionBeginner->begin();
+
+		try {
+			$model->load([
+				'email'             => $dto->email,
+				'email_username'    => $dto->email_username,
+				'role'              => $dto->role,
+				'restrict_ip_login' => $dto->restrict_ip_login
+			]);
+
+			if ($dto->email_password !== null) {
+				$model->email_password = $dto->email_password;
+			}
+
+			if ($dto->password !== null) {
+				$model->password_hash = $this->security->generatePasswordHash($dto->password);
+			}
+
+			$model->saveOrThrow();
+
+			$userProfileModel = $model->userProfile;
+
+			$this->userProfileService->update($userProfileModel, $userProfileDto, $uploadMedia);
+
+			$tx->commit();
+
+			return $model;
+		} catch (Throwable $th) {
+			$tx->rollBack();
+			throw $th;
+		}
+	}
+
+	/**
+	 * @throws SaveModelException
+	 * @throws Throwable
+	 * @throws StaleObjectException
+	 */
+	public function delete(User $model): void
+	{
+		$tx = $this->transactionBeginner->begin();
+
+		try {
+			$model->status = User::STATUS_DELETED;
+			$this->accessTokenService->deleteAllByUserId($model->id);
+
+			$model->saveOrThrow();
+
+			$this->eventManager->trigger(new UserDeletedEvent($model));
+
+			$tx->commit();
+		} catch (Throwable $th) {
+			$tx->rollBack();
+			throw $th;
+		}
+	}
+
+	/**
+	 * @throws SaveModelException
+	 * @throws StaleObjectException
+	 * @throws Throwable
+	 */
+	public function archive(User $model): void
+	{
+		$tx = $this->transactionBeginner->begin();
+
+		try {
+			$model->status = User::STATUS_INACTIVE;
+
+			$this->accessTokenService->deleteAllByUserId($model->id);
+
+			$model->saveOrThrow();
+
+			$this->eventManager->trigger(new UserArchivedEvent($model));
+
+			$tx->commit();
+		} catch (Throwable $th) {
+			$tx->rollBack();
+			throw $th;
+		}
+	}
+
+	/**
+	 * @throws SaveModelException
+	 */
+	public function restore(User $model): void
+	{
+		$model->status = User::STATUS_ACTIVE;
+
+		$model->saveOrThrow();
+	}
+
+	/**
+	 * @throws SaveModelException
+	 * @throws Throwable
+	 */
+	public function updateActivity(User $model, UserActivityDto $userActivityDto): void
+	{
+		$tx = $this->transactionBeginner->begin();
+
+		try {
+			$model->updateAttributes(['last_seen' => DateTimeHelper::nowf()]);
+
+			$this->userActivityService->track($userActivityDto);
+
+			$tx->commit();
+		} catch (Throwable $th) {
+			$tx->rollBack();
+			throw $th;
+		}
+	}
+
+	/**
+	 * @throws SaveModelException
+	 * @throws Exception
+	 */
+	public function changePassword(User $user, ChangeUserPasswordDto $dto): void
+	{
+		// TODO: Разлогин со всех аккаунтов
+
+		if (!$this->security->validatePassword($dto->currentPassword, $user->password_hash)) {
+			throw new InvalidPasswordException('Invalid current password.');
+		}
+
+		$user->password_hash = $this->security->generatePasswordHash($dto->newPassword);
+
+		$user->saveOrThrow();
+	}
+}

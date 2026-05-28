@@ -1,0 +1,79 @@
+<?php
+
+use app\components\Formatter;
+use yii\helpers\Html;
+use yii\twig\ViewRenderer;
+use yii\web\View;
+
+$common_params = require __DIR__ . "/params.php";
+$common_db     = require __DIR__ . "/db.php";
+$common_db_old = require __DIR__ . "/db_old.php";
+
+return [
+	'notify'      => [
+		'class' => app\components\NotificationService::class,
+	],
+	'notifyQueue' => [
+		'class'        => app\components\NotificationsQueueService::class,
+		'host'         => 'localhost',
+		'port'         => 5672,
+		'user'         => $common_params['rabbit']['user'],
+		'password'     => $common_params['rabbit']['password'],
+		'queueName'    => $common_params['rabbit']['notify']['queueName'],
+		'exchangeName' => $common_params['rabbit']['notify']['exchangeName'],
+	],
+	'queue'       => [
+		'class'        => \yii\queue\amqp_interop\Queue::class,
+		'port'         => 5672,
+		'user'         => $common_params['rabbit']['user'],
+		'password'     => $common_params['rabbit']['password'],
+		'queueName'    => $common_params['rabbit']['queueName'],
+		'exchangeName' => $common_params['rabbit']['exchangeName'],
+		'driver'       => yii\queue\amqp_interop\Queue::ENQUEUE_AMQP_LIB,
+	],
+	'formatter'   => [
+		'class'                  => Formatter::class,
+		'dateFormat'             => 'long',
+		'currencyCode'           => 'RUB',
+		'decimalSeparator'       => '.',
+		'thousandSeparator'      => ' ',
+		'nullDisplay'            => '',
+		'numberFormatterOptions' => [
+			NumberFormatter::MIN_FRACTION_DIGITS => 0,
+			NumberFormatter::MAX_FRACTION_DIGITS => 2,
+		]
+	],
+	'authManager' => [
+		'class' => 'yii\rbac\DbManager'
+	],
+	'cache'       => [
+		'class' => 'yii\caching\FileCache',
+        'keyPrefix' => 'site_copy_',
+	],
+	'log'         => [
+		'targets' => [
+			[
+				'class'  => 'yii\log\FileTarget',
+				'levels' => ['error', 'warning', 'info'],
+			]
+		]
+	],
+	'db'          => fn() => Yii::$container->get('db'),
+	'db_old'      => fn() => Yii::$container->get('old_db'),
+	'view'        => [
+		'class'     => View::class,
+		'renderers' => [
+			'twig' => [
+				'class'     => ViewRenderer::class,
+				'cachePath' => '@runtime/Twig/cache',
+				'options'   => [
+					'auto_reload' => true,
+				],
+				'globals'   => [
+					'html' => ['class' => Html::class],
+				],
+				'uses'      => ['yii\bootstrap'],
+			]
+		],
+	]
+];

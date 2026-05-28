@@ -1,0 +1,24 @@
+<?php
+
+
+namespace app\helpers\validators;
+
+use yii\validators\Validator;
+
+class IsArrayValidator extends Validator
+{
+
+    public function validateAttribute($model, $attr)
+    {
+        if (!is_array($model->$attr)) {
+            $this->addError($model, $attr, '"{attribute}" must be array');
+        }
+    }
+    /**
+     * {@inheritdoc}
+     */
+    protected function validateValue($value)
+    {
+        return is_array($value);
+    }
+}
