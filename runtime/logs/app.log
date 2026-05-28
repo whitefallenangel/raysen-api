@@ -108860,3 +108860,1895 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1779958622.8231
     'REQUEST_TIME' => 1779958622
 ]
+2026-05-28 11:57:34 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 11:57:33 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'OVKXpRGkujLVyitFMxc46A=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54811'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958653.8132
+    'REQUEST_TIME' => 1779958653
+]
+2026-05-28 11:58:04 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 11:58:04 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'MpujzW1BwUlttR3bfQLeuA=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54832'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958684.8033
+    'REQUEST_TIME' => 1779958684
+]
+2026-05-28 11:58:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 11:58:35 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'Z59m89jHStYXzlicHmcYRg=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54849'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958715.8039
+    'REQUEST_TIME' => 1779958715
+]
+2026-05-28 11:59:06 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 11:59:06 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'jEo1cT0Wmt4m43QR0zUqYw=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54868'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958746.8042
+    'REQUEST_TIME' => 1779958746
+]
+2026-05-28 11:59:37 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 11:59:37 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'fqK0GHp4BVlKUlP7H3ZjWA=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54896'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958777.8025
+    'REQUEST_TIME' => 1779958777
+]
+2026-05-28 12:00:08 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 12:00:08 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'Al47VyZRJFBZTzlL9aOm0w=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54923'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958808.814
+    'REQUEST_TIME' => 1779958808
+]
+2026-05-28 12:00:39 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 12:00:39 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'tmrI5fVgnxy+7d1bW5fnsg=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54941'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958839.8174
+    'REQUEST_TIME' => 1779958839
+]
+2026-05-28 12:01:05 [127.0.0.1][-][-][info][yii\filters\RateLimiter::beforeAction] Rate limit skipped: user not logged in.
+2026-05-28 12:01:05 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8081/'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'GET'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54955'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/surveys?status=draft&user_id=83&per-page=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'OPTIONS'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958865.8164
+    'REQUEST_TIME' => 1779958865
+]
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\filters\RateLimiter::beforeAction] Rate limit skipped: user not logged in.
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=user_prod_backend
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT `user`.* FROM `user` INNER JOIN `user_access_token` ON `user`.`id` = `user_access_token`.`user_id` WHERE (`user`.`status`=10) AND ((`user_access_token`.`expires_at` > NOW()) AND (`user_access_token`.`deleted_at` IS NULL) AND (`access_token`='Aa3Lxj2IyflVfOIbTBmlbl5NFhQnT84p_1779801002'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user' AND `kcu`.`TABLE_NAME` = 'user'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_access_token` WHERE (`user_access_token`.`expires_at` > NOW()) AND (`user_access_token`.`deleted_at` IS NULL) AND (`access_token`='Aa3Lxj2IyflVfOIbTBmlbl5NFhQnT84p_1779801002') AND (`user_id`=83)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_access_token`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user_access_token' AND `kcu`.`TABLE_NAME` = 'user_access_token'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\web\User::login] User '83' logged in from 127.0.0.1. Session not enabled.
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT COUNT(*) FROM `survey` LEFT JOIN `user` ON `survey`.`user_id` = `user`.`id` LEFT JOIN `user_profile` ON `user`.`id` = `user_profile`.`user_id` LEFT JOIN `contact` ON `survey`.`contact_id` = `contact`.`id` WHERE `survey`.`deleted_at` IS NULL
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT `survey`.* FROM `survey` LEFT JOIN `user` ON `survey`.`user_id` = `user`.`id` LEFT JOIN `user_profile` ON `user`.`id` = `user_profile`.`user_id` LEFT JOIN `contact` ON `survey`.`contact_id` = `contact`.`id` WHERE `survey`.`deleted_at` IS NULL LIMIT 20
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `survey`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'survey' AND `kcu`.`TABLE_NAME` = 'survey'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `chat_member` WHERE `id` IN (4921, 8784, 8772, 8770, 7273, 7249, 11043, 6175, 8626, 7627, 7447, 8476, 8049, 10652, 7975, 10308, 5612, 5613)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `chat_member`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'chat_member' AND `kcu`.`TABLE_NAME` = 'chat_member'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id` IN (49, 62, 58, 73, 61, 60, 68)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id` IN (49, 58, 60, 61, 62, 68, 73)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_profile`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user_profile' AND `kcu`.`TABLE_NAME` = 'user_profile'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `contact` WHERE `id` IN (13255, 12975, 12963, 12961, 44138, 11860, 44412, 4197, 7509, 43409, 43135, 7403, 43158, 43810, 7071, 13361, 3369)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `contact`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'contact' AND `kcu`.`TABLE_NAME` = 'contact'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=13255
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=13255)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `phone`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'phone' AND `kcu`.`TABLE_NAME` = 'phone'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=13255
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `way_of_informing`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'way_of_informing' AND `kcu`.`TABLE_NAME` = 'way_of_informing'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=13255
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('221', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `object_chat_member`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'object_chat_member' AND `kcu`.`TABLE_NAME` = 'object_chat_member'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=user_pennylane
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=399
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `c_industry`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'c_industry' AND `kcu`.`TABLE_NAME` = 'c_industry'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=4
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=34
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=3418
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `company`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'company' AND `kcu`.`TABLE_NAME` = 'company'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=399)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `c_industry_offers_mix`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'c_industry_offers_mix' AND `kcu`.`TABLE_NAME` = 'c_industry_offers_mix'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((1, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=12975
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=12975)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=12975
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=12975
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request` WHERE (`id`, `morph`) IN (('9138', 'request'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `request`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'request' AND `kcu`.`TABLE_NAME` = 'request'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_region` WHERE `request_id`=9138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `request_region`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'request_region' AND `kcu`.`TABLE_NAME` = 'request_region'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `l_regions` WHERE `id`=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `l_regions`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'l_regions' AND `kcu`.`TABLE_NAME` = 'l_regions'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_direction` WHERE `request_id`=9138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `request_direction`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'request_direction' AND `kcu`.`TABLE_NAME` = 'request_direction'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_district` WHERE `request_id`=9138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_object_type` WHERE `request_id`=9138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `request_object_type`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'request_object_type' AND `kcu`.`TABLE_NAME` = 'request_object_type'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_object_class` WHERE `request_id`=9138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `request_object_class`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'request_object_class' AND `kcu`.`TABLE_NAME` = 'request_object_class'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=9638
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((2, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=12963
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=12963)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=12963
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=12963
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request` WHERE (`id`, `morph`) IN (('9133', 'request'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_region` WHERE `request_id`=9133
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `l_regions` WHERE `id`=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_direction` WHERE `request_id`=9133
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_district` WHERE `request_id`=9133
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_object_type` WHERE `request_id`=9133
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_object_class` WHERE `request_id`=9133
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=9633
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((3, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=12961
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `email`
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'email' AND `kcu`.`TABLE_NAME` = 'email'
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=12961)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=12961
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=12961
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request` WHERE (`id`, `morph`) IN (('9132', 'request'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_region` WHERE `request_id`=9132
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `l_regions` WHERE `id`=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_direction` WHERE `request_id`=9132
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_district` WHERE `request_id`=9132
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_object_type` WHERE `request_id`=9132
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `request_object_class` WHERE `request_id`=9132
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=9632
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((4, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=44138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=44138)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=44138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=44138
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('1378', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=2408
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=150
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=3984
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=2408)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((5, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=41
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=41
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=11860
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=11860)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=11860
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=11860
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('1366', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=2395
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=290
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=7306
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=2395)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((6, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=61
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=61
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=44412
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=44412)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=44412
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=44412
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('25336718', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=11420
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=0
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=10768
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=11420)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((7, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=4197
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=4197)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=4197
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=4197
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('855', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=1751
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=150
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=5158
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=1751)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((8, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((9, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=7509
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=7509)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=7509
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=7509
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('2046', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=3102
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=150
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=8639
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=3102)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((10, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=41
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=41
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=43409
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=43409)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=43409
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=43409
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('1583', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=2627
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=150
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=7786
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=2627)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((11, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=34
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=34
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=43135
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=43135)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=43135
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=43135
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('1469', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=2508
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=290
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=10080
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=2508)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((12, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=7403
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=7403)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=7403
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=7403
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('1997', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=3047
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=150
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=8521
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=3047)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((13, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=43158
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=43158)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=43158
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=43158
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('1805', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=2843
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=150
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=49
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=8240
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=2843)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((14, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=43810
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=43810)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=43810
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=43810
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('3346', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=11020
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=0
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=10415
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=11020)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((15, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=7071
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=7071)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=7071
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=7071
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('1771', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=2813
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=290
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=8176
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=2813)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((16, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((17, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=62
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=13361
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=13361)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=13361
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=13361
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('3002', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=10664
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=0
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=9184
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=10664)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((18, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=39
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=39
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `email` WHERE `contact_id`=3369
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `phone` WHERE (`phone`.`deleted_at` IS NULL) AND (`contact_id`=3369)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `way_of_informing` WHERE `contact_id`=3369
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `website` WHERE `contact_id`=3369
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('568', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=1199
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=9
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=39
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=4177
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=1199)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((19, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `object_chat_member` WHERE (`id`, `morph`) IN (('569', 'object'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_pennylane`.`c_industry` `c_industry` WHERE `id`=1202
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `user_id_old`=290
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_profile` WHERE `user_id`=58
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `company` WHERE `id`=4177
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `c_industry_offers_mix` WHERE (`user_pennylane`.`c_industry_offers_mix`.`type_id`=2) AND (`object_id`=1202)
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`relation` `relation` WHERE (`first_id`, `first_type`) IN ((20, 'survey'))
+2026-05-28 12:01:06 [127.0.0.1][83][-][info][yii\db\Command::query] SELECT * FROM `user_prod_backend`.`call` `call` WHERE 0=1
+2026-05-28 12:01:05 [127.0.0.1][83][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost:8081/'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54955'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/surveys?status=draft&user_id=83&per-page=1'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958865.9657
+    'REQUEST_TIME' => 1779958865
+]
+2026-05-28 12:01:10 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 12:01:10 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'trgGe42EAqb9RH7ojPrxvg=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54962'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958870.7989
+    'REQUEST_TIME' => 1779958870
+]
+2026-05-28 12:01:41 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 12:01:41 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'WpI8ax+6hH4qMehy1tAk7w=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '54979'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958901.8182
+    'REQUEST_TIME' => 1779958901
+]
+2026-05-28 12:02:12 [127.0.0.1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Request.php:299
+Stack trace:
+#0 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ\Downloads\qwerty\nginx-1.28.1\html\api.pennylane.pro\public_html\public_html\index.php(25): yii\base\Application->run()
+#3 {main}
+2026-05-28 12:02:12 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPCODE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\appcode.vmoptions'
+    'APPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Roaming'
+    'CLION_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\clion.vmoptions'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-GT6RPMC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DATAGRIP_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\datagrip.vmoptions'
+    'DATASPELL_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\dataspell.vmoptions'
+    'DEVECOSTUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\devecostudio.vmoptions'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'GATEWAY_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\gateway.vmoptions'
+    'GOLAND_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\goland.vmoptions'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Программист ПК'
+    'IDEA_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\idea.vmoptions'
+    'JETBRAINSCLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrainsclient.vmoptions'
+    'JETBRAINS_CLIENT_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\jetbrains_client.vmoptions'
+    'LOCALAPPDATA' => 'C:\\Users\\Программист ПК\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-GT6RPMC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'NVM_HOME' => 'C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm'
+    'NVM_SYMLINK' => 'C:\\Program Files\\nodejs'
+    'OneDrive' => 'C:\\Users\\Программист ПК\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\nodejs\\;c:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\php7.4\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Программист ПК\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;;C:\\Users\\Программист ПК\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Users\\Программист ПК\\AppData\\Roaming\\npm;C:\\Users\\Программист ПК\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Программист ПК\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHPSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\phpstorm.vmoptions'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 26 Stepping 5, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '1a05'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PYCHARM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\pycharm.vmoptions'
+    'RIDER_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rider.vmoptions'
+    'RUBYMINE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\rubymine.vmoptions'
+    'SESSIONNAME' => 'Console'
+    'STUDIO_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\studio.vmoptions'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\620A~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-GT6RPMC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-GT6RPMC'
+    'USERNAME' => 'programmerPC'
+    'USERPROFILE' => 'C:\\Users\\Программист ПК'
+    'WEBIDE_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webide.vmoptions'
+    'WebStorm' => 'C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\bin;'
+    'WEBSTORM_VM_OPTIONS' => 'C:\\Users\\Программист ПК\\Desktop\\jetbra\\vmoptions\\webstorm.vmoptions'
+    'windir' => 'C:\\Windows'
+    'HTTP_SEC_WEBSOCKET_EXTENSIONS' => 'permessage-deflate; client_max_window_bits'
+    'HTTP_SEC_WEBSOCKET_KEY' => 'On6F9hMQeGs/havVKjIprw=='
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_SEC_WEBSOCKET_VERSION' => '13'
+    'HTTP_ORIGIN' => 'http://localhost:8081'
+    'HTTP_UPGRADE' => 'websocket'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 YaBrowser/26.4.0.0 Safari/537.36'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CONNECTION' => 'Upgrade'
+    'HTTP_HOST' => 'api.pennylane.pro.loc'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'api.pennylane.pro.loc'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '55000'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.28.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/websocket/'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'SCRIPT_FILENAME' => 'c:/Users/РџСЂРѕРіСЂР°РјРјРёСЃС‚ РџРљ/Downloads/qwerty/nginx-1.28.1/html/api.pennylane.pro/public_html/public_html/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1779958932.8053
+    'REQUEST_TIME' => 1779958932
+]
