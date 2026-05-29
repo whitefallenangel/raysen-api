@@ -44,12 +44,12 @@ class GeneralChatMemberSearchStrategy extends BaseChatMemberSearchStrategy
 	{
 		return [
 			'asc'  => [
-				//'cmle.updated_at'            => SORT_ASC,
+				'cmle.updated_at'            => SORT_ASC,
 				'cmm.chat_member_message_id' => SORT_ASC,
 				ChatMember::field('id')      => SORT_ASC,
 			],
 			'desc' => [
-				//'cmle.updated_at'            => SORT_DESC,
+				'cmle.updated_at'            => SORT_DESC,
 				'cmm.chat_member_message_id' => SORT_DESC,
 				ChatMember::field('id')      => SORT_ASC,
 			],

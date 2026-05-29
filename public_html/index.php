@@ -1,10 +1,5 @@
 <?php
 
-define('YII_DEBUG', true);
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
-header('Access-Control-Allow-Headers: *');
-
 defined('YII_PROJECT_ROOT') or define('YII_PROJECT_ROOT', realpath(__DIR__ . "/../"));
 
 $secrets = require YII_PROJECT_ROOT . "/config/secrets.php";
@@ -14,7 +9,7 @@ if ($yii_env === null || $yii_debug === null) {
     throw new Exception('YII_ENV or YII_DEBUG not found in config');
 }
 
-//defined('YII_DEBUG') or define('YII_DEBUG', $yii_debug);
+defined('YII_DEBUG') or define('YII_DEBUG', $yii_debug);
 defined('YII_ENV') or define('YII_ENV', $yii_env);
 
 require YII_PROJECT_ROOT . '/vendor/autoload.php';

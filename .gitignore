@@ -62,4 +62,6 @@ phpstan.neon
 /config/params.php
 
 *.sql
-runtime/logs/*.log
+runtime/logs/*
+runtime/cache/*
+moveDataFromDB.log

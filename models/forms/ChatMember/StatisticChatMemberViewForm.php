@@ -31,10 +31,8 @@ class StatisticChatMemberViewForm extends Form
 	public function getDto(): StatisticChatMemberViewDto
 	{
 		return new StatisticChatMemberViewDto([
-			'chat_member_ids' => [11627],
-			'model_types'     => ['user']
-			//'chat_member_ids' => $this->chat_member_ids,
-			//'model_types'     => $this->model_types
+			'chat_member_ids' => $this->chat_member_ids,
+			'model_types'     => $this->model_types
 		]);
 	}
 }
