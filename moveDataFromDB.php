@@ -576,7 +576,7 @@ foreach ($result as $data) {
     echo '.'; // $sqlRailway . "\n\n"; //break;
     $result = mysqli_query($mysqliNew, $sqlRailway);
     //die();
-	if ($loppIndex % 500 == 0) { echo '__|__'; sleep(1); }
+	if ($loppIndex % 500 == 0) { echo '__|__'; sleep(2); }
 	$loppIndex++;
 
 }
@@ -723,14 +723,16 @@ foreach ($result as $data) {
         if ($field == 'photo_block' && !empty($data['photo_block'])) {
             $dataPhotos = json_decode($data['photo_block'], true);
 
-            foreach ($dataPhotos as $photo) {
-                if (!file_exists( __DIR__ . '/public_html' . dirname($photo) )) {
-                    mkdir(__DIR__ . '/public_html' . dirname($photo), 0755, true);
-                }
-                $imageContent = @file_get_contents('https://pennylane.pro' . str_replace(' ', '%20', $photo));
-                $dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $photo, $imageContent);
-                if (empty($dataMoveFile)) writeToLog('Block photo ' . $photo . ' was not transferred');
-            }
+			if (is_array($dataPhotos) || is_object($dataPhotos)) {
+				foreach ($dataPhotos as $photo) {
+					if (!file_exists( __DIR__ . '/public_html' . dirname($photo) )) {
+						mkdir(__DIR__ . '/public_html' . dirname($photo), 0755, true);
+					}
+					$imageContent = @file_get_contents('https://pennylane.pro' . str_replace(' ', '%20', $photo));
+					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $photo, $imageContent);
+					if (empty($dataMoveFile)) writeToLog('Block photo ' . $photo . ' was not transferred');
+				}
+			}
         }
         if (in_array($field, ['land_use_restrictions'])) {
             $data[$field] = ($data[$field] ?? 0) == 1 ? ' - ' : '';
