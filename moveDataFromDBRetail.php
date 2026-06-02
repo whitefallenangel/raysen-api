@@ -25,7 +25,7 @@ else{echo 'Authentication Failed... ' . error_get_last()['message'] . "\n";die()
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
-//if (0) {
+if (0) {
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -68,9 +68,6 @@ $lines[25] = '';
 file_put_contents($output_file, implode(PHP_EOL, $lines));
 if (is_file($backup_file)) unlink($backup_file);
 
-//$secrets['db']['username'] = 'root';
-//$secrets['db']['username'] = '666666';
-
 $username = $secrets['db']['username'];
 $password = $secrets['db']['password']; // q12we34r!
 //$mysql_path = 'C:\\Users\\Программист ПК\\Downloads\\qwerty\\nginx-1.28.1\\mysql-9.6.0-winx64\\bin\\mysql.exe';
@@ -107,7 +104,7 @@ if (is_file('cleaned_backup.sql')) unlink('cleaned_backup.sql');
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
-//}
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -186,7 +183,7 @@ foreach ($contactPositionList as $data) {
 // b_iblock_element -
 // Перенос звонков //b_iblock_element
 $fieldsContact = [
-	'id' => 'ID',
+	//'id' => 'ID',
 	'nameRu' => 'NAME',
 	//'noName' => 'no_name',
 	//'status' => 'result',
@@ -199,7 +196,7 @@ $fieldsContact = [
 	'morph' => 'morph',
 	'all_moved_data' => 'all_moved_data',
 
-	'company_department' => '2',
+	'company_department' => '3',
 	'company_department_id' => 'depID',
 ];
 
@@ -256,6 +253,7 @@ foreach ($resultSql as $data) {
     $data['0'] = 0;
     $data['1'] = '';
     $data['2'] = '2';
+	$data['3'] = '3';
     $data['41'] = '41';
     $data['morph'] = 'company';
 	$dataID = $data['ID'];
@@ -408,7 +406,7 @@ $fieldsUsers = [
 	//'phones' => 'phones',
 	'restrict_ip_login' => '1_1',
 
-	'user_department' => '2',
+	'user_department' => '3',
 	'user_department_id' => 'depID',
 ];
 
@@ -422,10 +420,10 @@ WHERE bbe.`IBLOCK_ID` = 14 GROUP BY bbe.`ID`');
 
 
 /*
-DELETE FROM `user` WHERE `id` > 83;
 DELETE FROM `user_profile` WHERE `id` > 64;
 DELETE FROM `user_profile_email` WHERE `id` > 124;
-DELETE FROM `user_profile_phone` WHERE `id` > 135;
+DELETE FROM `user_profile_phone` WHERE `id` > 13;
+DELETE FROM `user` WHERE `id` > 84;
 
 (код - значение)
 102 - Email
@@ -443,6 +441,7 @@ foreach ($resultSql as $data) {
     $data['1_1'] = '1';
     $data['1'] = '';
     $data['2'] = '2';
+	$data['3'] = '3';
 	$data['NowTimeVar'] = time();
 //var_dump(1111111111, class_exists(Yii), Yii::$app);
 	foreach ($fieldsUsers as $field) {
@@ -507,7 +506,7 @@ foreach ($resultSql as $data) {
 	if (!in_array($data['email'], $contactListData['email'])) {
 		$contactListData['email'][$data['ID']] = $data['email'];
 	}
-	if ($loppIndex % 500 == 0) { echo '---'; sleep(2); }
+	if ($loppIndex % 1000 == 0) { echo '---'; sleep(2); }
 	$loppIndex++;
 	//break;
 }
@@ -534,7 +533,7 @@ $fieldsRequests = [
 	//'contact_id' => 'clyent_id',
 	'all_moved_data' => 'all_moved_data',
 
-	'request_department' => '2',
+	'request_department' => '3',
 	'request_department_id' => 'depID',
 ];
 
@@ -556,6 +555,7 @@ DELETE FROM `request` WHERE `id` > 10096;
     $data['1_1'] = '1';
     $data['1'] = '';
     $data['2'] = '2';
+	$data['3'] = '3';
 	$data['41'] = '41';
 
 	foreach ($fieldsRequests as $field) {
@@ -647,7 +647,7 @@ $fieldsBuilding = [
 		//'building_test_only' => 'test_only',
 		//'building_property_documents' => 'building_property_documents',
 		//'building_layouts' => 'building_layouts',
-	'building_department' => '2',
+	'building_department' => '3',
 	'building_department_id' => 'depID',
 	'building_all_moved_data' => 'all_moved_data',
 
@@ -667,16 +667,16 @@ $fieldsObjBuilding = [
 	'b_obj_offer_id' => '0',
 	'b_obj_full_square_min' => 'total_area',
 	'b_obj_full_square_max' => 'total_area',
-		//'b_obj_storage_square_min' => 'area_warehouse_min',
-		//'b_obj_storage_square_max' => 'area_warehouse_max',
+		'b_obj_storage_square_min' => '0',
+		'b_obj_storage_square_max' => '0',
 	'b_obj_office_square_min' => 'total_area',
 	'b_obj_office_square_max' => 'total_area',
-		//'b_obj_retail_square_min' => '0',
-		//'b_obj_retail_square_max' => '0',
-		//'b_obj_technical_square_min' => 'area_tech_min',
-		//'b_obj_technical_square_max' => 'area_tech_max',
-		//'b_obj_public_square_min' => '0',
-		//'b_obj_public_square_max' => '0',
+		'b_obj_retail_square_min' => '0',
+		'b_obj_retail_square_max' => '0',
+		'b_obj_technical_square_min' => '0',
+		'b_obj_technical_square_max' => '0',
+		'b_obj_public_square_min' => '0',
+		'b_obj_public_square_max' => '0',
 		//'b_obj_floor_type' => 'floor_types',
 	'b_obj_floor' => 'floor',
 	'b_obj_special_floor' => '0',
@@ -692,7 +692,7 @@ $fieldsObjBuilding = [
 		//'b_obj_charging_room' => 'charging_room',
 		//'b_obj_storage_methods' => 'safe_type',
 
-	'b_obj_department' => '2',
+	'b_obj_department' => '3',
 	'b_obj_department_id' => 'depID',
 	//'b_obj_all_moved_data' => 'all_moved_data',
 ];
@@ -725,7 +725,7 @@ $fieldsLand = [
 	'land_plot_latitude' => 'latitude',
 	'land_plot_longitude' => 'longitude',
 	'land_plot_author_id' => 'agent_id',
-    'land_plot_department' => '2',
+    'land_plot_department' => '3',
 	'land_plot_department_id' => 'depID',
 ];
 $buildingListData = ['address' => []];
@@ -1139,6 +1139,7 @@ foreach ($resultSql as $data) {
 	$data['0'] = 0;
 	$data['1'] = '';
 	$data['2'] = '2';
+	$data['3'] = '3';
 	foreach ($fieldsObjBuilding as $field) {
 		if ($field == 'parent_id') {
 			$data[$field] = intval($lastBuildingInsId ?? 0);
@@ -1177,7 +1178,7 @@ foreach ($resultSql as $data) {
 	echo '.';// . $sqlBObj . "\n\n"; //break; //die();
 	$result = mysqli_query($mysqliNew, $sqlBObj);
 	if (!$result) {
-		echo $sql; die();
+		echo $sqlBObj; die();
 	}
 
 	if ($loppIndex % 500 == 0) { echo '__--__'; sleep(2); }
@@ -1576,7 +1577,7 @@ $fieldsOffer = [
 	'offer_status_reason' => '1',
 	'offer_last_update' => 'TIMESTAMP_X',
 
-	'offer_department' => '2',
+	'offer_department' => '3',
 	'offer_department_id' => 'depID',
 	'offer_all_moved_data' => 'all_moved_data',
 ];
@@ -1661,6 +1662,7 @@ foreach ($resultSql as $data) {
 		$data['0'] = 0;
 		$data['1'] = '';
 		$data['2'] = '2';
+		$data['3'] = '3';
 		$dataID = $data['ID'];
 		foreach ($fieldsOffer as $field) {
 

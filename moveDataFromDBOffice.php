@@ -144,7 +144,7 @@ while ($data = $resultSql->fetch_assoc()) {
 		if ($field == 'c_company' || $field == 'c_adress') {
 			if (in_array($data[$field], $companyListData[$field])) {
 				$duplKey = array_search($data[$field], $companyListData[$field]);
-				$data['all_moved_data']['id_duplicate'] = 1;
+				$data['all_moved_data']['is_duplicate'] = 1;
 				if (!empty($duplKey)) $data['all_moved_data']['duplicated_id'] = $duplKey;
 			}
 		}
@@ -190,6 +190,7 @@ while ($data = $resultSql->fetch_assoc()) {
 				'position_id' => !empty($keyDolzhnost) ? $keyDolzhnost : 0,
 				'status' => empty($data['result']) ? 1 : 0,
 				'morph' => 'contact',
+				'contact_department' => '2',
 				'temp_name' => addslashes($data['c_fio' . $i] ?? 'Мусор'),
 			];
 
@@ -256,7 +257,7 @@ while ($data = $resultSql->fetch_assoc()) {
 		//	echo $sqlURL; die();
 		//}
 	}
-	if ($loppIndex % 500 == 0) { echo '__'; sleep(2); }
+	if ($loppIndex % 1000 == 0) { echo '__'; sleep(2); }
 	$loppIndex++;
 	//break;
 }
@@ -471,7 +472,7 @@ while ($data = $resultSql->fetch_assoc()) {
 	//if (!$result) {
 		//echo $sql . "\n\n"; die();
 	//}
-	if ($loppIndex % 500 == 0) { echo '_-_'; sleep(2); }
+	if ($loppIndex % 1000 == 0) { echo '_-_'; sleep(2); }
 	$loppIndex++;
 	//break;
 }
@@ -522,8 +523,8 @@ $fieldsBuilding = [
 	'building_class' => 'object_class',
 	'building_complex_id' => '0',
 	'building_in_complex' => '0',
-	'building_latitude' => 'c_x',
-	'building_longitude' => 'c_y',
+	'building_latitude' => 'c_y',
+	'building_longitude' => 'c_x',
 		'building_author_id' => 'author_id',
 	'building_from_mkad' => '0',
 	'building_photo' => 'office_files2',
@@ -552,16 +553,18 @@ while ($data = $resultSql->fetch_assoc()) {
     $data['0'] = 0;
     $data['1'] = '';
     $data['2'] = '2';
+    $data['owners'] = $data['owners'] ?? '2';
     $data['in_main_sections'] = 3;
 	$data['location_id'] = 0;
 	$dataID = $data['id'];
 	$data['office_files'] = trim($data['office_files'], ',,');
+	$data['all_moved_data'] = [];
 
     foreach ($fieldsBuilding as $field) {
         if (in_array($field, ['dt_update_full', 'author_id', 'power', 'own_type_land', 'area', 'location_id'])) {
             $data[$field] = intval($data[$field] ?? 0);
         }
-        if ($field = 'clyent_id') {
+        if ($field == 'clyent_id') {
 			$data[$field] = $dataID + ($contactMaxID['contact_max_id'] ?? 0);
         }
 
@@ -572,12 +575,13 @@ while ($data = $resultSql->fetch_assoc()) {
 			$data[$field] = $dataID + ($buildingMaxID['building_max_id'] ?? 0);
 		}
 		if ($field == 'depID') {
-			$data[$field] = $data[$field] == 2 ? 4 : $data[$field];
+			$data[$field] = $data['id'];
+			//$data[$field] = $data[$field] == 2 ? 4 : $data[$field];
 		}
-		if ($field == 'yandex_address_str') {
+		if (!empty($field) && $field == 'yandex_address_str') {
 			if (in_array($data[$field], $buildingListData[$field])) {
 				$duplKey = array_search($data[$field], $buildingListData[$field]);
-				$data['all_moved_data']['id_duplicate'] = 1;
+				$data['all_moved_data']['is_duplicate'] = 1;
 				if (!empty($duplKey)) $data['all_moved_data']['duplicated_id'] = $duplKey;
 			}
 		}
@@ -616,7 +620,7 @@ while ($data = $resultSql->fetch_assoc()) {
 			if (!file_exists( __DIR__ . '/public_html' . $dataFolder )) {
 				mkdir(__DIR__ . '/public_html' . $dataFolder, 0755, true);
 			}
-			for ($i = 1; $i <= 10; $i++) {
+			for ($i = 1; $i <= 9; $i++) {
 				$fileUrl  = "/photo/offices/".$dataID."/0/" . $i . ".jpg";
 				$fileUrl2 = "/plan/offices/".$dataID."/0/" . $i . ".jpg";
 
@@ -648,10 +652,10 @@ while ($data = $resultSql->fetch_assoc()) {
 				$fileUrl  = "/files/offices/".$dataID."/" . $photo;
 				$fileUrl2 = "/files/offices/".$dataID."/0/" . $photo;
 
-				if ($fileContent = file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl) ) !== false ) {
+				if ($fileContent = @file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl) ) !== false ) {
 					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder, $fileContent);
 					if (empty($dataMoveFile)) writeToLog('File ' . $fileUrl . ' was not transferred');
-				} elseif ($fileContent = file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl2) ) !== false ) {
+				} elseif ($fileContent = @file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl2) ) !== false ) {
 					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder, $fileContent);
 					if (empty($dataMoveFile)) writeToLog('File ' . $fileUrl2 . ' was not transferred');
 				} else {
@@ -663,7 +667,12 @@ while ($data = $resultSql->fetch_assoc()) {
         } elseif ($field == 'office_files') {
 			$data['office_files'] = '';
 		}
-        $sql .= "'" . $data[$field] .  "',";
+        //$sql .= "'" . $data[$field] .  "',";
+		//if ($field == 'all_moved_data') {
+		//	$sql .= "'" . json_encode($data['all_moved_data'] ?? '') . "',";
+		//} else {
+			$sql .= "'" . (is_array($data[$field]) ? json_encode($data[$field] ?? '') : $data[$field]) .  "',";
+		//}
 
     }
     $sql = substr($sql, 0, -1) . ")";
@@ -732,10 +741,10 @@ $fieldsLand = [
     'land_plot_permition' => '0',
 		//'land_plot_permition_text' => 'field_allow_usage',
 	'land_plot_in_main_sections' => 'in_main_sections',
-		'land_plot_restrictions' => 'land_use_restrictions',
+		'land_plot_restrictions' => 0, //'land_use_restrictions',
 	'land_plot_attributes' => '1',
 		//land_plot_infrastructure -------- ?????
-		'land_plot_title' => 'title',
+		'land_plot_title' => '1', //'title',
 	'land_plot_location' => 'location_id',
 	'land_plot_category' => '0',
 	'land_plot_last_update' => 'dt_update_full',
@@ -749,8 +758,8 @@ $fieldsLand = [
 	'land_plot_description' => 'land_options',
 	'land_plot_in_complex' => '0',
 	'land_plot_complex_id' => '0',
-	'land_plot_latitude' => 'c_x',
-	'land_plot_longitude' => 'c_y',
+	'land_plot_latitude' => 'c_y',
+	'land_plot_longitude' => 'c_x',
 		//'land_plot_author_id' => 'author_id',
     'land_plot_department' => '2',
 	'land_plot_department_id' => 'depID',
@@ -761,7 +770,7 @@ $fieldsLand = [
 			if (in_array($field, ['dt_update_full', 'author_id', 'land_area', 'own_type_land', 'location_id'])) {
 				$data[$field] = intval($data[$field] ?? 0);
 			}
-			if ($field = 'clyent_id') {
+			if ($field == 'clyent_id') {
 				$data[$field] = $dataID + ($contactMaxID['contact_max_id'] ?? 0);
 			}
 			if ($field == 'id') {

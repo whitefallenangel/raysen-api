@@ -18,6 +18,8 @@ if (!$mysqliOld || !$mysqliOld ) {
     die("Ошибка подключения: " . mysqli_connect_error());
 }
 
+$loppIndex = 0;
+
 // Перенос таблиц для правил локаций (метро, шоссе, шоссе Москвы, регионы, районы, города, ж/д станции)
 $tablesLocationToMove = [
     'l_metros' => [
@@ -574,6 +576,8 @@ foreach ($result as $data) {
     echo '.'; // $sqlRailway . "\n\n"; //break;
     $result = mysqli_query($mysqliNew, $sqlRailway);
     //die();
+	if ($loppIndex % 500 == 0) { echo '__|__'; sleep(1); }
+	$loppIndex++;
 
 }
 
@@ -723,7 +727,7 @@ foreach ($result as $data) {
                 if (!file_exists( __DIR__ . '/public_html' . dirname($photo) )) {
                     mkdir(__DIR__ . '/public_html' . dirname($photo), 0755, true);
                 }
-                $imageContent = file_get_contents('https://pennylane.pro' . str_replace(' ', '%20', $photo));
+                $imageContent = @file_get_contents('https://pennylane.pro' . str_replace(' ', '%20', $photo));
                 $dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $photo, $imageContent);
                 if (empty($dataMoveFile)) writeToLog('Block photo ' . $photo . ' was not transferred');
             }
@@ -750,6 +754,8 @@ foreach ($result as $data) {
     $sql = substr($sql, 0, -1) . ")";
     echo '.'; // $sql . "\n\n"; //break; //die();
     $result = mysqli_query($mysqliNew, $sql); //die();
+	if ($loppIndex % 1000 == 0) { echo '__-__'; sleep(2); }
+	$loppIndex++;
 }
 //die();
 

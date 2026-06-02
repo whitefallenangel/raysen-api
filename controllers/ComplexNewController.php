@@ -128,9 +128,9 @@ class ComplexNewController extends AppController
 			}
 			// json_decode $model['location']['location_direction_mo']
 			$model['location']['location_direction_mo_title'] = !empty($model['location']['location_direction_mo']) ? $moscowRegionEnum[$model['location']['location_direction_mo']] : null;
-			$model['building_class'] = !empty($model['building_class']) ? $buildingClassEnum[$model['building_class']] : null;
-			$model['building_line'] = !empty($model['building_line']) ? $buildingLineEnum[$model['building_line']] : null;
-			$model['building_type'] = !empty($model['building_type']) ? $buildingTypeEnum[$model['building_type']] : null;
+			$model['building_class'] = !empty($model['building_class']) ? ($buildingClassEnum[$model['building_class']] ?? null) : null;
+			$model['building_line'] = !empty($model['building_line']) ? ($buildingLineEnum[$model['building_line']] ?? null) : null;
+			$model['building_type'] = !empty($model['building_type']) ? ($buildingTypeEnum[$model['building_type']] ?? null) : null;
 
 			$model['offerTypeEnum'] = OfferTypeEnum::labels();
 			// Получение данных по минимальномым и максимальномым данным предложения
