@@ -26,6 +26,26 @@ if (!is_dir($backupDir)) {
     mkdir($backupDir, 0755, true);
 }
 
+// Код для удаления старых бэкапов
+$maxAge = 10; // дней
+$currentTime = time();
+if ($handle = opendir($backupDir)) {
+    while (false !== ($file = readdir($handle))) {
+        if ($file != "." && $file != "..") {
+            $filePath = $backupDir . $file;
+            if (is_file($filePath)) {
+                $fileModTime = filemtime($filePath);
+                $fileAge = ($currentTime - $fileModTime) / (60 * 60 * 24); // возраст в днях
+                if ($fileAge > $maxAge) {
+                    unlink($filePath); // удаляем файл
+                    echo "Удален старый бэкап: $file (возраст: " . round($fileAge, 1) . " дней)\n";
+                }
+            }
+        }
+    }
+    closedir($handle);
+}
+
 // Команда для создания бэкапа базы данных через mysqldump
 $dumpCommand = "mysqldump -h {$dbHost} -u {$dbUser} -p{$dbPass} {$dbName} > {$localBackupPath}";
 
