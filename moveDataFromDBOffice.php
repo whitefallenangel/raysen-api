@@ -613,6 +613,7 @@ while ($data = $resultSql->fetch_assoc()) {
 		 // MOVE PHOTOS AND FILES //
 	/////////////////////////////////////
 
+		$dataPhotos = [];
 		if ($field == 'office_files2') {
 
 			$dataFolder = '/uploads/objects/' . $data['id'] . '/';
@@ -662,11 +663,16 @@ while ($data = $resultSql->fetch_assoc()) {
 					writeToLog('File ' . $photo . ' was not transferred');
 				}
             }
-			$data['office_files2'] = json_encode(array_merge($dataPhotos, $dataPhotos2), JSON_UNESCAPED_UNICODE);
-			$data['office_files']  = '';
+			//$data['office_files']  = '';
         } elseif ($field == 'office_files') {
 			$data['office_files'] = '';
 		}
+
+		if ($field == 'office_files2') {
+			$data['office_files']  = '';
+			$data['office_files2'] = json_encode(array_merge($dataPhotos, $dataPhotos2), JSON_UNESCAPED_UNICODE);
+		}
+
         //$sql .= "'" . $data[$field] .  "',";
 		//if ($field == 'all_moved_data') {
 		//	$sql .= "'" . json_encode($data['all_moved_data'] ?? '') . "',";
