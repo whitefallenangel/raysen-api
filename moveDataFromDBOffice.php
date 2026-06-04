@@ -634,6 +634,8 @@ while ($data = $resultSql->fetch_assoc()) {
 					unlink( __DIR__ . '/public_html' . $dataFolder.$i.".jpg" );
 				}
 
+				if ($i > 5) continue;
+
 				$fileContent = file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl2) );
 				$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder.$i."_plan.jpg", $fileContent);
 				if ($dataMoveFile != 33094) {
@@ -1183,6 +1185,7 @@ for ($i = 1; $i <= 3; $i++) {
 		$data['0'] = 0;
 		$data['1'] = '';
 		$data['2'] = '2';
+		$dataID = $data['id'];
 		foreach ($fieldsObjBuilding as $field) {
 			if ($field == 'parent_id') {
 				$data[$field] = $dataID + ($buildingMaxID['building_max_id'] ?? 0);
@@ -1213,6 +1216,7 @@ for ($i = 1; $i <= 3; $i++) {
 		$sql = "INSERT INTO offer (" . implode(", ", array_keys($fieldsOffer)) . ") VALUES (";
 		$data['0'] = 0;
 		$data['1'] = '';
+		$dataID = $data['id'];
 		foreach ($fieldsOffer as $field) {
 
 			if (in_array($field, ['sale_company', 'price_opex_inc', 'cross_docking', 'pallet_place_min'])) {
