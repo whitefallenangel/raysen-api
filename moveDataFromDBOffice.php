@@ -493,7 +493,7 @@ DELETE FROM `lifting_mechanisms` WHERE `id` > 983;
 
 // Перенос объектов (строений) //c_offices
 $fieldsBuilding = [
-	//'id' => 'id',
+	'id' => 'id',
 	'building_ready_status' => 'finishing',
 	'building_square' => 'area',
 	'building_floors_counts' => 'floors_int',
@@ -541,8 +541,8 @@ $fieldsBuilding = [
 $buildingListData = ['yandex_address_str' => []];
 
 //$result = mysqli_query($mysqliOld, "SELECT * FROM `c_offices` WHERE id = 5");
-//$resultSql = mysqli_query($mysqliOld, "SELECT co.*, GROUP_CONCAT(cf.file_name, ',,') as office_files FROM `c_offices` AS co LEFT JOIN `c_files` AS cf ON cf.tbl_id = co.id AND cf.deleted = 0 GROUP BY co.id LIMIT 1");
-$resultSql = $mysqliOld->query("SELECT co.*, GROUP_CONCAT(cf.file_name, ',,') as office_files FROM `c_offices` AS co LEFT JOIN `c_files` AS cf ON cf.tbl_id = co.id AND cf.deleted = 0 GROUP BY co.id");
+//$resultSql = mysqli_query($mysqliOld, "SELECT co.*, GROUP_CONCAT(cf.file_name, ',,') as office_files FROM `c_offices` AS co LEFT JOIN `c_files` AS cf ON cf.tbl_id = co.id AND cf.deleted = 0 GROUP BY co.id");
+$resultSql = $mysqliOld->query("SELECT co.*, GROUP_CONCAT(cf.id, ',,') as office_files FROM `c_offices` AS co LEFT JOIN `c_files` AS cf ON cf.tbl_id = co.id AND cf.deleted = 0 GROUP BY co.id");
 
 //foreach ($result as $data) {
 while ($data = $resultSql->fetch_assoc()) {
@@ -614,63 +614,56 @@ while ($data = $resultSql->fetch_assoc()) {
 	/////////////////////////////////////
 
 		$dataPhotos = [];
-		if ($field == 'office_files2') {
-
+		if (!empty($field) && $field == 'office_files2') {
 			$dataFolder = '/uploads/objects/' . $data['id'] . '/';
 			$dataPhotos2 = [];
 			if (!file_exists( __DIR__ . '/public_html' . $dataFolder )) {
 				mkdir(__DIR__ . '/public_html' . $dataFolder, 0755, true);
 			}
-			for ($i = 1; $i <= 9; $i++) {
+			for ($i = 1; $i <= 10; $i++) {
 				$fileUrl  = "/photo/offices/".$dataID."/0/" . $i . ".jpg";
 				$fileUrl2 = "/plan/offices/".$dataID."/0/" . $i . ".jpg";
 
-				$fileContent = file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl) );
+				$fileContent = file_get_contents( 'http://commerce.gorki.ru' . $fileUrl);
 				$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder.$i.".jpg" , $fileContent);
 				if ($dataMoveFile != 33094) {
 					if (empty($dataMoveFile)) writeToLog('Photo ' . $fileUrl . ' was not transferred');
-					else $dataPhotos2[] = $dataFolder . '/' . $i . ".jpg";
+					else $dataPhotos2[] = $dataFolder . $i . ".jpg";
 				} else {
 					unlink( __DIR__ . '/public_html' . $dataFolder.$i.".jpg" );
 				}
 
 				if ($i > 5) continue;
 
-				$fileContent = file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl2) );
+				$fileContent = file_get_contents( 'http://commerce.gorki.ru' . $fileUrl2 );
 				$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder.$i."_plan.jpg", $fileContent);
 				if ($dataMoveFile != 33094) {
 					if (empty($dataMoveFile)) writeToLog('Photo ' . $fileUrl2 . ' was not transferred');
-					else $dataPhotos2[] = $dataFolder . '/' . $i . "_plan.jpg";
+					else $dataPhotos2[] = $dataFolder . $i . "_plan.jpg";
 				} else {
 					unlink( __DIR__ . '/public_html' . $dataFolder.$i."_plan.jpg" );
 				}
 			}
 
 		}
-        if ($field == 'office_files2' && !empty($data['office_files'])) {
+        /*if (!empty($field) && $field == 'office_files2' && !empty($data['office_files'])) {
             $dataPhotos = explode(',,', trim($data['office_files'], ',,'));
-            foreach ($dataPhotos as &$photo) {
-				$photo = trim($photo , ',');
-				//var_dump(0, $photo);
-				$fileUrl  = "/files/offices/".$dataID."/" . $photo;
-				$fileUrl2 = "/files/offices/".$dataID."/0/" . $photo;
+            foreach ($dataPhotos as &$photoId) {
+				$photoId = trim($photoId , ',');
+				$fileUrl  = "http://commerce.gorki.ru/file/" . $photoId . '/';
 
-				if ($fileContent = @file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl) ) !== false ) {
+				if ($fileContent = @file_get_contents( $fileUrl ) !== false ) {
 					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder, $fileContent);
 					if (empty($dataMoveFile)) writeToLog('File ' . $fileUrl . ' was not transferred');
-				} elseif ($fileContent = @file_get_contents( 'http://commerce.gorki.ru/' . str_replace(' ', '%20', $fileUrl2) ) !== false ) {
-					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder, $fileContent);
-					if (empty($dataMoveFile)) writeToLog('File ' . $fileUrl2 . ' was not transferred');
 				} else {
-					writeToLog('File ' . $photo . ' was not transferred');
+					writeToLog('File ' . 'http://commerce.gorki.ru' . $fileUrl . ' was not transferred');
 				}
             }
-			//$data['office_files']  = '';
-        } elseif ($field == 'office_files') {
+        }elseif ($field == 'office_files') {
 			$data['office_files'] = '';
-		}
+		}*/
 
-		if ($field == 'office_files2') {
+		if (!empty($field) && $field == 'office_files2') {
 			$data['office_files']  = '';
 			$data['office_files2'] = json_encode(array_merge($dataPhotos, $dataPhotos2), JSON_UNESCAPED_UNICODE);
 		}

@@ -1043,9 +1043,10 @@ foreach ($resultSql as $data) {
 			foreach ($data['photos'] as $phKey => $photo) {
 				$fileUrl = $data['photos_dir'][$phKey] . "/" . $photo;
 
-				if (file_exists( 'https://retail.realtor.ru/upload/' . str_replace(' ', '%20', $fileUrl) )) {
+				$file_headers = @get_headers('https://retail.realtor.ru/upload/' . str_replace(' ', '%20', $fileUrl));
+				if (str_contains($file_headers[0], "200 OK") || str_contains($file_headers[7], "200 OK")) {
 					$fileContent  = file_get_contents('https://retail.realtor.ru/upload/' . str_replace(' ', '%20', $fileUrl));
-					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder . ".jpg" , $fileContent);
+					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder . $photo , $fileContent);
 					if (!empty($dataMoveFile)) {
 						if (empty($dataMoveFile)) writeToLog('Photo ' . $fileUrl . ' was not transferred');
 						else $dataPhotos[] = $dataFolder . $photo;
@@ -1054,10 +1055,15 @@ foreach ($resultSql as $data) {
 					}
 				}
 			}
+
 			foreach ($data['photo_plans'] as $phKey => $photo) {
 				$dataFileURL  = explode('/', $photo);
 				$fileName = end($dataFileURL);
-				if (file_exists($photo)) {
+				$fileName = explode('?', $fileName);
+				$fileName = $fileName[0];
+
+				$file_headers = @get_headers($photo);
+				if (str_contains($file_headers[0], "200 OK") || str_contains($file_headers[7], "200 OK")) {
 					$fileContent  = file_get_contents($photo);
 					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder . $fileName, $fileContent);
 					if (!empty($dataMoveFile)) {
