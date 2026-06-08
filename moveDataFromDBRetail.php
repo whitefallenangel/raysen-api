@@ -1043,7 +1043,10 @@ foreach ($resultSql as $data) {
 			foreach ($data['photos'] as $phKey => $photo) {
 				$fileUrl = $data['photos_dir'][$phKey] . "/" . $photo;
 				//$file_headers = @get_headers('https://retail.realtor.ru/upload/' . str_replace(' ', '%20', $fileUrl));
-				if ($fileContent = @file_get_contents( 'https://retail.realtor.ru/upload/' . str_replace(' ', '%20', $fileUrl) ) !== false ) {
+				$url = 'https://retail.realtor.ru/upload/' . str_replace(' ', '%20', $fileUrl);
+				$fileContent = @file_get_contents($url);
+
+				if ($fileContent !== false ) {
 				//if (str_contains($file_headers[0], "200 OK") || str_contains($file_headers[7], "200 OK")) {
 					//$fileContent  = file_get_contents('https://retail.realtor.ru/upload/' . str_replace(' ', '%20', $fileUrl));
 					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder . $photo , $fileContent);
@@ -1064,7 +1067,9 @@ foreach ($resultSql as $data) {
 
 				//$file_headers = @get_headers($photo);
 				//if (str_contains($file_headers[0], "200 OK") || str_contains($file_headers[7], "200 OK")) {
-				if ($fileContent = @file_get_contents( $photo ) !== false ) {
+				$fileContent = @file_get_contents($photo);
+
+				if ($fileContent !== false ) {
 					//$fileContent  = file_get_contents($photo);
 					$dataMoveFile = file_put_contents(__DIR__ . '/public_html' . $dataFolder . $fileName, $fileContent);
 					if (!empty($dataMoveFile)) {
