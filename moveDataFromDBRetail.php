@@ -899,7 +899,7 @@ foreach ($resultSql as $data) {
 	$data['photos_dir']  = explode(',', $data['photos_dir'] ?? '');
 
     foreach ($fieldsBuilding as $field) {
-        if (in_array($field, ['electro_power', 'total_area', 'floors_count', 'building_type', 'longitude', 'latitude'])) {
+        if (in_array($field, ['electro_power', 'total_area', 'floors_count', 'building_type'])) {
             $data[$field] = intval($data[$field] ?? 0);
         }
         if ($field == 'owner_id') {
