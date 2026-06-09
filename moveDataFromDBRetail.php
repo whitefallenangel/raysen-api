@@ -312,9 +312,9 @@ foreach ($resultSql as $data) {
     $sql = substr($sql, 0, -1) . ")";
     echo '.';// . $sql . "\n\n"; //break; //die();
     $result = mysqli_query($mysqliNew, $sql);
-	if (!$result) {
-		echo $sql; die();
-	}
+	//if (!$result) {
+	//	echo $sql; die();
+	//}
 
 	$lastCompanyInsId = $mysqliNew->insert_id;
 	$lastContactInsId = 0;
@@ -339,9 +339,9 @@ foreach ($resultSql as $data) {
 		$sql = substr($sql, 0, -1) . ")";
 		echo '.';// . $sql . "\n\n"; //break; //die();
 		$result = mysqli_query($mysqliNew, $sql);
-		if (!$result) {
-			echo $sql; die();
-		}
+		//if (!$result) {
+		//	echo $sql; die();
+		//}
 
 		$lastContactInsId = $mysqliNew->insert_id;
 
@@ -364,9 +364,9 @@ foreach ($resultSql as $data) {
 				$sqlPhone = substr($sqlPhone, 0, -1) . ")";
 				echo '.';// . $sqlPhone . "\n\n"; //break; //die();
 				$result = mysqli_query($mysqliNew, $sqlPhone);
-				if (!$result) {
-					echo $sqlPhone; die();
-				}
+				//if (!$result) {
+				//	echo $sqlPhone; die();
+				//}
 			}
 		}
 		if (!empty($data['email'])) {
@@ -375,9 +375,9 @@ foreach ($resultSql as $data) {
 				$sqlEmail = "INSERT INTO email (contact_id, email) VALUES (" . $lastContactInsId . ",'" . trim($email, "'") . "')";
 				echo '.';// . $sqlEmail . "\n\n"; //break; //die();
 				$result = mysqli_query($mysqliNew, $sqlEmail); //die();
-				if (!$result) {
-					echo $sqlEmail; die();
-				}
+				//if (!$result) {
+				//	echo $sqlEmail; die();
+				//}
 			}
 		}
 	//}
@@ -476,18 +476,18 @@ foreach ($resultSql as $data) {
 	if (in_array($data['email'], $contactListData['email'])) continue;
 
 	$result = mysqli_query($mysqliNew, $sql);
-	if (!$result) {
-		echo $sql; die();
-	}
+	//if (!$result) {
+	//	echo $sql; die();
+	//}
 
 	$lastUserInsId = $mysqliNew->insert_id;
 
 	$sql = "INSERT INTO user_profile (user_id, temp_name) VALUES (" . $lastUserInsId . ",'" . addslashes(!empty($data['NAME']) ? $data['NAME'] : 'Мусор') . "')";
 	echo '.';// . $sql . "\n\n"; //break; //die();
 	$result = mysqli_query($mysqliNew, $sql);
-	if (!$result) {
-		echo $sql; die();
-	}
+	//if (!$result) {
+	//	echo $sql; die();
+	//}
 	$lastProfileInsId = $mysqliNew->insert_id;
 
 	// Добавляем телефоны юзеру если заполнены
@@ -498,9 +498,9 @@ foreach ($resultSql as $data) {
 			$sqlPhone = "INSERT INTO user_profile_phone (user_profile_id, phone) VALUES (" . $lastProfileInsId . ",'" . preg_replace('/[-()+ ]/', '', $phone) . "')";
 			echo '.';// . $sqlPhone . "\n\n"; //break; //die();
 			$result = mysqli_query($mysqliNew, $sqlPhone); //die();
-			if (!$result) {
-				echo $sqlPhone; die();
-			}
+			//if (!$result) {
+			//	echo $sqlPhone; die();
+			//}
 		}
 	}
 	if (!in_array($data['email'], $contactListData['email'])) {
@@ -1093,9 +1093,9 @@ foreach ($resultSql as $data) {
     $sql = substr($sql, 0, -1) . ")";
     echo '.';// . $sql . "\n\n"; //break; //die();
     $result = mysqli_query($mysqliNew, $sql);
-	if (!$result) {
-		echo $sql; die();
-	}
+	//if (!$result) {
+	//	echo $sql; die();
+	//}
 
 	$lastBuildingInsId = $mysqliNew->insert_id;
 	$buildingInsIdData[$data['ID']] = $lastBuildingInsId;
@@ -1140,9 +1140,9 @@ foreach ($resultSql as $data) {
 			$sqlLand = substr($sqlLand, 0, -1) . ")";
 			echo '.';// .  $sqlLand . "\n\n"; //break; // die();
 			$result = mysqli_query($mysqliNew, $sqlLand);
-			if (!$result) {
-				echo $sqlLand; die();
-			}
+			//if (!$result) {
+			//	echo $sqlLand; die();
+			//}
 		}
 	}
 
@@ -1189,9 +1189,9 @@ foreach ($resultSql as $data) {
 	$sqlBObj = substr($sqlBObj, 0, -1) . ")";
 	echo '.';// . $sqlBObj . "\n\n"; //break; //die();
 	$result = mysqli_query($mysqliNew, $sqlBObj);
-	if (!$result) {
-		echo $sqlBObj; die();
-	}
+	//if (!$result) {
+	//	echo $sqlBObj; die();
+	//}
 
 	if ($loppIndex % 500 == 0) { echo '__--__'; sleep(2); }
 	$loppIndex++;
@@ -1249,6 +1249,7 @@ foreach ($resultSql as $data) {
         'security_object_type' => 'security_type',
         'security_object_attributes' => 'dataAttr',
     ];
+
 	$data['security_alert'] = 'есть';
 	if ( !empty($data['fire_alert']) && (($data['fire_alert'] ?? '') == 'есть') || !empty($data['security_alert']) && (($data['security_alert'] ?? '') == 'есть') ) {
 
@@ -1283,9 +1284,9 @@ foreach ($resultSql as $data) {
 		echo '.';// . $sqlSecurity . "\n\n"; //break; //die();
 		if (!empty($data['dataAttr'])) {
 			$result = mysqli_query($mysqliNew, $sqlSecurity);
-			if (!$result) {
-				echo $sqlSecurity; die();
-			}
+			//if (!$result) {
+			//	echo $sqlSecurity; die();
+			//}
 		}
 	}
 
@@ -1358,9 +1359,9 @@ foreach ($resultSql as $data) {
     $sqlCommun = substr($sqlCommun, 0, -1) . ")";
     echo '.';// .  $sqlCommun . "\n\n"; //break;
     $result = mysqli_query($mysqliNew, $sqlCommun);
-	if (!$result) {
-		echo $sqlCommun; die();
-	}
+	//if (!$result) {
+	//	echo $sqlCommun; die();
+	//}
     //die();
 
     // Добавление парковок и въездов
@@ -1436,9 +1437,9 @@ foreach ($resultSql as $data) {
 		echo '.';// . $sqlParking . "\n\n"; //break;
 		if (!empty($data['dataAttr'])) {
 			$result = mysqli_query($mysqliNew, $sqlParking);
-			if (!$result) {
-				echo $sqlParking; die();
-			}
+			//if (!$result) {
+			//	echo $sqlParking; die();
+			//}
 		}
 	}
     //die();
@@ -1789,9 +1790,9 @@ foreach ($resultSql as $data) {
 		$sql = substr($sql, 0, -1) . ")";
 		echo '.';// . $sql . "\n\n"; break; //die();
 		$result = mysqli_query($mysqliNew, $sql);
-		if (!$result) {
-			echo $sql; die();
-		}
+		//if (!$result) {
+		//	echo $sql; die();
+		//}
 		if ($loppIndex % 500 == 0) { echo '__/\__'; sleep(2); }
 		$loppIndex++;
 		//break;
