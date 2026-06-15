@@ -33,7 +33,7 @@ class m260130_131553_create_table_building extends Migration
             'building_complex_id' => $this->integer()->unsigned()->notNull()->comment('ID комплекса в который входит'),
             'building_in_plot' =>  $this->integer()->unsigned()->notNull()->defaultValue(0)->comment('Связанно ли участком'),
             'building_related_plot' => $this->string(128)->comment('ID связанного участка'),
-            'building_attributes' => $this->string(128)->notNull()->comment('Атрибуты здания'),
+            'building_attributes' => $this->string()->notNull()->comment('Атрибуты здания'),
             'building_infrastructure' => $this->string(128)->notNull()->defaultValue('')->comment('Инфраструктура здания'),
             'building_owner' => $this->string(128)->notNull()->defaultValue("")->comment('Владелец(ы) здания'),
             'building_owner_type' => $this->integer()->unsigned()->notNull()->defaultValue(0)->comment('Тип владения зданием'),
